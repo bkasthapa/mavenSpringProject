@@ -7,10 +7,14 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<bean id="autoCtrl" class="com.controllerPackage.AutoController">
-		<property name="at" ref="custinfo">
-		</property>
+	
+		<property name="at" ref="custinfo"> </property>
+		<property name="cs" ref="custominfo"> </property>
+		
 	</bean>
-	<bean id="custinfo" class="servicesPackage.AutoService">
+	
+	<bean id="custinfo" class="servicesPackage.AutoService"> </bean>
+	<bean id="custominfo" class="servicesPackage.CustomerService"> 
 	</bean>
 
 	<bean id="viewResolver"
